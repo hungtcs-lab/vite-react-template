@@ -1,4 +1,3 @@
-import { theme } from "antd";
 import { useMemo, type PropsWithChildren } from "react";
 import styled from "styled-components";
 
@@ -12,10 +11,6 @@ export interface PageWrapperProps {
 
 export function PageWrapper(props: PropsWithChildren<PageWrapperProps>) {
   const { padding: _padding, children } = props;
-
-  const { token } = theme.useToken();
-
-  console.log(token.Layout?.headerHeight);
 
   const padding = useMemo(() => {
     if (typeof _padding === "boolean" && _padding) {

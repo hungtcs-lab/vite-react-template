@@ -1,6 +1,6 @@
 import react from "@vitejs/plugin-react";
 import history from "connect-history-api-fallback";
-import { ViteDevServer, defineConfig } from "vite";
+import { defineConfig, type ViteDevServer } from "vite";
 import checker from "vite-plugin-checker";
 import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -25,7 +25,7 @@ function redirectAll() {
 
 export default defineConfig({
   server: {
-    // port: 4200,
+    port: 1024,
     proxy: {
       "/api/": {
         target: "http://127.0.0.1:3000",

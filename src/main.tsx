@@ -6,6 +6,8 @@ import "sanitize.css/typography.css";
 import "sanitize.css/ui-monospace.css";
 import "./global.scss";
 
+import "./i18next";
+
 import dayjs from "dayjs";
 import "dayjs/locale/zh-cn";
 import localizedFormat from "dayjs/plugin/localizedFormat";

@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ]
+}

@@ -7,7 +7,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "",
-        lazy: () => import("./routes/app"),
+        lazy: () => import("./routes/_app/route"),
         children: [
           {
             index: true,
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "home",
-            lazy: () => import("./routes/app.home"),
+            lazy: () => import("./routes/_app.home/route"),
           },
         ],
       },
@@ -24,17 +24,17 @@ export const router = createBrowserRouter([
         children: [
           {
             path: "login",
-            lazy: () => import("./routes/auth/login"),
+            lazy: () => import("./routes/auth.login/route"),
           },
           {
             path: "logout",
-            lazy: () => import("./routes/auth/logout"),
+            lazy: () => import("./routes/auth.logout/route"),
           },
         ],
       },
       {
         path: "initialization",
-        lazy: () => import("./routes/initialization"),
+        lazy: () => import("./routes/initialization/route"),
       },
       {
         path: "*",
